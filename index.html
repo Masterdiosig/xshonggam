@@ -5,59 +5,82 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Xổ Số Hồng Gấm</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
+      background: #f0f0f0;
       margin: 0;
       padding: 0;
     }
+
     header {
-      background-color: #d32f2f;
+      background-color: #c62828;
       color: white;
-      padding: 15px;
+      padding: 20px 0;
       text-align: center;
-      font-size: 24px;
+      font-size: 26px;
       font-weight: bold;
     }
+
     .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
+      max-width: 960px;
+      margin: 30px auto;
       background: white;
+      padding: 20px;
+      border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      margin-top: 30px;
     }
+
+    h2 {
+      text-align: center;
+      color: #d32f2f;
+      margin-bottom: 20px;
+    }
+
     iframe {
       width: 100%;
-      height: 1200px;
+      height: 1800px;
       border: none;
     }
+
     footer {
-      margin-top: 50px;
+      margin-top: 40px;
       text-align: center;
       padding: 20px;
-      background: #eee;
+      background: #f5f5f5;
       font-size: 14px;
-      color: #555;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        height: 2000px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>XỔ SỐ HỒNG GẤM</header>
+
   <div class="container">
     <h2>Kết quả xổ số hôm nay</h2>
 
-<iframe src="https://www.minhngoc.net.vn/free/index.php"
- width="500" height="2000" frameborder="0" scrolling="auto"
- id="iframe_xosominhngoc" name="iframe_xosominhngoc"></iframe>
+    <!-- Nhúng iframe kết quả từ Minh Ngọc -->
+    <iframe 
+      src="https://www.minhngoc.net.vn/free/index.php" 
+      title="Kết quả xổ số Minh Ngọc"
+      loading="lazy">
+    </iframe>
 
-    <script language="javascript" src="//www.minhngoc.com.vn/jquery/jquery-1.7.2.js"></script><link rel="styleshee<script language="javascript" src="//www.minhngoc.com.vn/jquery/jquery-1.7.2.js"></script><link rel="stylesheet" type="text/css" href="//www.minhngoc.com.vn/style/bangketqua_mini.css"/><div id="box_kqxs_minhngoc"><script language="javascript"> 	bgcolor="#bfbfbf";titlecolor="#730038";dbcolor="#000000";fsize="12px";kqwidth="300px"; </script><script language="javascript" src="//www.minhngoc.com.vn/getkqxs/mien-bac.js"></script></div>
-    <!-- Nhúng iframe kết quả Minh Ngọc -->
-    <iframe src="https://www.minhngoc.net.vn/ket-qua-xo-so/mien-nam.html"></iframe>
   </div>
 
   <footer>
-    &copy; 2025 Xổ Số Hồng Gấm. Dữ liệu bởi Minh Ngọc.
+    &copy; 2025 Xổ Số Hồng Gấm. Dữ liệu từ <a href="https://www.minhngoc.net.vn" target="_blank">MinhNgoc.net.vn</a>.
   </footer>
+
 </body>
 </html>
