@@ -1,83 +1,148 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Xổ Số Hồng Gấm</title>
+  <meta charset="UTF-8">
+  <title>Kết quả xổ số 3 miền hôm nay</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f0f0;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #c62828;
-      color: white;
-      padding: 20px 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #f8f8f8;
+      padding: 30px;
       text-align: center;
-      font-size: 26px;
-      font-weight: bold;
     }
 
-    .container {
-      max-width: 960px;
-      margin: 30px auto;
+    h1 {
+      color: #d62828;
+    }
+
+    .region-title {
+      font-size: 24px;
+      margin: 30px 0 10px;
+      color: #003049;
+      text-transform: uppercase;
+    }
+
+    .lottery-table {
+      margin: 0 auto 30px;
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 700px;
       background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    h2 {
-      text-align: center;
-      color: #d32f2f;
-      margin-bottom: 20px;
+    .lottery-table th,
+    .lottery-table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      font-size: 18px;
     }
 
-    iframe {
-      width: 100%;
-      height: 1800px;
-      border: none;
+    .lottery-table th {
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    .prize-name {
+      font-weight: bold;
+      width: 120px;
+      background-color: #fafafa;
+    }
+
+    .highlight {
+      color: #d62828;
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .date {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
     }
 
     footer {
       margin-top: 40px;
-      text-align: center;
-      padding: 20px;
-      background: #f5f5f5;
-      font-size: 14px;
-      color: #777;
-    }
-
-    @media (max-width: 768px) {
-      iframe {
-        height: 2000px;
-      }
+      color: #888;
     }
   </style>
 </head>
 <body>
+  <h1>Kết quả Xổ số 3 Miền hôm nay</h1>
 
-  <header>XỔ SỐ HỒNG GẤM</header>
+  <!-- Kết quả Miền Bắc -->
+  <div class="region-title">Miền Bắc</div>
+  <p class="date" id="date-mb">Đang tải...</p>
+  <table class="lottery-table" id="table-mb">
+    <tr><th>Giải</th><th>Kết quả</th></tr>
+    <tr><td class="prize-name">Đặc biệt</td><td id="mb-db" class="highlight">—</td></tr>
+    <tr><td class="prize-name">Giải nhất</td><td id="mb-nhat">—</td></tr>
+    <tr><td class="prize-name">Giải nhì</td><td id="mb-nhi">—</td></tr>
+    <tr><td class="prize-name">Giải ba</td><td id="mb-ba">—</td></tr>
+    <tr><td class="prize-name">Giải tư</td><td id="mb-tu">—</td></tr>
+    <tr><td class="prize-name">Giải năm</td><td id="mb-nam">—</td></tr>
+    <tr><td class="prize-name">Giải sáu</td><td id="mb-sau">—</td></tr>
+    <tr><td class="prize-name">Giải bảy</td><td id="mb-bay">—</td></tr>
+  </table>
 
-  <div class="container">
-    <h2>Kết quả xổ số hôm nay</h2>
+  <!-- Kết quả Miền Trung -->
+  <div class="region-title">Miền Trung</div>
+  <p class="date" id="date-mt">Đang tải...</p>
+  <table class="lottery-table" id="table-mt">
+    <tr><th>Giải</th><th>Kết quả</th></tr>
+    <tr><td class="prize-name">Đặc biệt</td><td id="mt-db" class="highlight">—</td></tr>
+    <tr><td class="prize-name">Giải nhất</td><td id="mt-nhat">—</td></tr>
+    <tr><td class="prize-name">Giải nhì</td><td id="mt-nhi">—</td></tr>
+    <tr><td class="prize-name">Giải ba</td><td id="mt-ba">—</td></tr>
+    <tr><td class="prize-name">Giải tư</td><td id="mt-tu">—</td></tr>
+    <tr><td class="prize-name">Giải năm</td><td id="mt-nam">—</td></tr>
+    <tr><td class="prize-name">Giải sáu</td><td id="mt-sau">—</td></tr>
+    <tr><td class="prize-name">Giải bảy</td><td id="mt-bay">—</td></tr>
+  </table>
 
-    <iframe src="https://www.minhngoc.net.vn/free/index.php"
- width="500" height="2000" frameborder="0" scrolling="auto"
- id="iframe_xosominhngoc" name="iframe_xosominhngoc"></iframe>
+  <!-- Kết quả Miền Nam -->
+  <div class="region-title">Miền Nam</div>
+  <p class="date" id="date-mn">Đang tải...</p>
+  <table class="lottery-table" id="table-mn">
+    <tr><th>Giải</th><th>Kết quả</th></tr>
+    <tr><td class="prize-name">Đặc biệt</td><td id="mn-db" class="highlight">—</td></tr>
+    <tr><td class="prize-name">Giải nhất</td><td id="mn-nhat">—</td></tr>
+    <tr><td class="prize-name">Giải nhì</td><td id="mn-nhi">—</td></tr>
+    <tr><td class="prize-name">Giải ba</td><td id="mn-ba">—</td></tr>
+    <tr><td class="prize-name">Giải tư</td><td id="mn-tu">—</td></tr>
+    <tr><td class="prize-name">Giải năm</td><td id="mn-nam">—</td></tr>
+    <tr><td class="prize-name">Giải sáu</td><td id="mn-sau">—</td></tr>
+    <tr><td class="prize-name">Giải bảy</td><td id="mn-bay">—</td></tr>
+  </table>
 
-  </div>
+  <footer>© Dữ liệu từ API ManyCai – Giao diện by ChatGPT ✨</footer>
 
-  <footer>
-    &copy; 2025 Xổ Số Hồng Gấm. Dữ liệu từ <a href="https://www.minhngoc.net.vn" target="_blank">MinhNgoc.net.vn</a>.
-  </footer>
+  <script>
+    const apiKey = 'K2683edd748f0a2';
+    const regions = ['mb', 'mt', 'mn']; // miền Bắc, Trung, Nam
+    const regionNames = { mb: 'Miền Bắc', mt: 'Miền Trung', mn: 'Miền Nam' };
 
+    const renderRegion = (regionCode) => {
+      const url = `http://free.manycai.com/${apiKey}/xs${regionCode}-1.json`;
+      fetch(url)
+        .then(res => res.json())
+        .then(data => {
+          const prizes = data.data.prizes;
+          const prefix = regionCode;
+          document.getElementById(`date-${prefix}`).innerText = `Ngày: ${data.data.day}`;
+
+          const prizeIds = ['db','nhat','nhi','ba','tu','nam','sau','bay'];
+          prizeIds.forEach(key => {
+            const val = prizes[key] || ['—'];
+            document.getElementById(`${prefix}-${key}`).innerHTML = val.join(' - ');
+          });
+        })
+        .catch(() => {
+          document.getElementById(`date-${regionCode}`).innerText = 'Không lấy được dữ liệu.';
+        });
+    };
+
+    regions.forEach(renderRegion);
+  </script>
 </body>
 </html>
