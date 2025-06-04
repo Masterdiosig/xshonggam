@@ -1,321 +1,82 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Kết quả Xổ số 3 Miền hôm nay</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: "Segoe UI", sans-serif;
-      background: #f8f8f8;
-      padding: 20px;
-      text-align: center;
-      margin: 0;
-    }
-
-    h1 {
-      color: #d62828;
-      font-size: 26px;
-    }
-
-    .region-title {
-      font-size: 20px;
-      margin: 30px 0 10px;
-      color: #003049;
-      text-transform: uppercase;
-    }
-
-    .lottery-table {
-      margin: 0 auto 30px;
-      border-collapse: collapse;
-      width: 100%;
-      max-width: 600px;
-      background: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .lottery-table th,
-    .lottery-table td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      font-size: 16px;
-    }
-
-    .lottery-table th {
-      background: #f2f2f2;
-      color: #333;
-    }
-
-    .prize-name {
-      font-weight: bold;
-      background-color: #fafafa;
-      width: 100px;
-    }
-
-    .highlight {
-      color: #d62828;
-      font-weight: bold;
-      font-size: 20px;
-    }
-
-    .date {
-      font-size: 15px;
-      color: #555;
-      margin-bottom: 10px;
-    }
-
-    footer {
-      margin-top: 40px;
-      color: #888;
-      font-size: 14px;
-    }
-
-    /* Rolling animation */
-    .rolling {
-      display: inline-block;
-      overflow: hidden;
-      height: 1.4em;
-      position: relative;
-    }
-
-    .rolling span {
-      display: block;
-      animation: rollUp 0.5s ease-in-out forwards;
-      transform: translateY(100%);
-    }
-
-    @keyframes rollUp {
-      from {
-        transform: translateY(100%);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0%);
-        opacity: 1;
-      }
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 22px;
-      }
-
-      .lottery-table th,
-      .lottery-table td {
-        font-size: 14px;
-        padding: 8px;
-      }
-
-      .region-title {
-        font-size: 18px;
-      }
-
-      .highlight {
-        font-size: 18px;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Xổ Số 3 Miền</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Kết quả Xổ số 3 Miền hôm nay</h1>
+  <div class="container">
+    <h1 class="title">KẾT QUẢ XỔ SỐ 3 MIỀN</h1>
 
-  <!-- Miền Bắc -->
-  <div class="region-title">Miền Bắc</div>
-  <p class="date" id="date-mb">Đang tải...</p>
-  <table class="lottery-table" id="table-mb">
-    <tr><th>Giải</th><th>Kết quả</th></tr>
-    <tr><td class="prize-name">Đặc biệt</td><td id="mb-db" class="highlight">—</td></tr>
-    <tr><td class="prize-name">Giải nhất</td><td id="mb-nhat">—</td></tr>
-    <tr><td class="prize-name">Giải nhì</td><td id="mb-nhi">—</td></tr>
-    <tr><td class="prize-name">Giải ba</td><td id="mb-ba">—</td></tr>
-    <tr><td class="prize-name">Giải tư</td><td id="mb-tu">—</td></tr>
-    <tr><td class="prize-name">Giải năm</td><td id="mb-nam">—</td></tr>
-    <tr><td class="prize-name">Giải sáu</td><td id="mb-sau">—</td></tr>
-    <tr><td class="prize-name">Giải bảy</td><td id="mb-bay">—</td></tr>
-  </table>
+    <!-- Tabs chọn miền -->
+    <div class="region-tabs">
+      <button class="tab active" data-region="mienbac">Miền Bắc</button>
+      <button class="tab" data-region="mientrung">Miền Trung</button>
+      <button class="tab" data-region="miennam">Miền Nam</button>
+    </div>
 
-  <!-- Miền Trung -->
-  <div class="region-title">Miền Trung</div>
-  <p class="date" id="date-mt">Đang tải...</p>
-  <table class="lottery-table" id="table-mt">
-    <tr><th>Giải</th><th>Kết quả</th></tr>
-    <tr><td class="prize-name">Đặc biệt</td><td id="mt-db" class="highlight">—</td></tr>
-    <tr><td class="prize-name">Giải nhất</td><td id="mt-nhat">—</td></tr>
-    <tr><td class="prize-name">Giải nhì</td><td id="mt-nhi">—</td></tr>
-    <tr><td class="prize-name">Giải ba</td><td id="mt-ba">—</td></tr>
-    <tr><td class="prize-name">Giải tư</td><td id="mt-tu">—</td></tr>
-    <tr><td class="prize-name">Giải năm</td><td id="mt-nam">—</td></tr>
-    <tr><td class="prize-name">Giải sáu</td><td id="mt-sau">—</td></tr>
-    <tr><td class="prize-name">Giải bảy</td><td id="mt-bay">—</td></tr>
-  </table>
+    <!-- Miền Bắc -->
+    <div class="region-content active" id="mienbac">
+      <div class="sub-tabs">
+        <button class="sub-tab active" data-target="hanoi">Hà Nội</button>
+        <button class="sub-tab" data-target="haiphong">Hải Phòng</button>
+      </div>
+      <div class="result-box active" id="hanoi">
+        <h3>Kết quả Hà Nội</h3>
+        <div class="result-row"><span>Giải ĐB:</span> <span>123456</span></div>
+        <div class="result-row"><span>Giải Nhất:</span> <span>34567</span></div>
+        <div class="result-row"><span>Giải Nhì:</span> <span>45678 - 56789</span></div>
+      </div>
+      <div class="result-box" id="haiphong">
+        <h3>Kết quả Hải Phòng</h3>
+        <div class="result-row"><span>Giải ĐB:</span> <span>654321</span></div>
+        <div class="result-row"><span>Giải Nhất:</span> <span>54321</span></div>
+        <div class="result-row"><span>Giải Nhì:</span> <span>43210 - 32109</span></div>
+      </div>
+    </div>
 
-  <!-- Miền Nam -->
-  <div class="region-title">Miền Nam</div>
-  <p class="date" id="date-mn">Đang tải...</p>
-  <table class="lottery-table" id="table-mn">
-    <tr><th>Giải</th><th>Kết quả</th></tr>
-    <tr><td class="prize-name">Đặc biệt</td><td id="mn-db" class="highlight">—</td></tr>
-    <tr><td class="prize-name">Giải nhất</td><td id="mn-nhat">—</td></tr>
-    <tr><td class="prize-name">Giải nhì</td><td id="mn-nhi">—</td></tr>
-    <tr><td class="prize-name">Giải ba</td><td id="mn-ba">—</td></tr>
-    <tr><td class="prize-name">Giải tư</td><td id="mn-tu">—</td></tr>
-    <tr><td class="prize-name">Giải năm</td><td id="mn-nam">—</td></tr>
-    <tr><td class="prize-name">Giải sáu</td><td id="mn-sau">—</td></tr>
-    <tr><td class="prize-name">Giải bảy</td><td id="mn-bay">—</td></tr>
-  </table>
+    <!-- Miền Trung -->
+    <div class="region-content" id="mientrung">
+      <div class="sub-tabs">
+        <button class="sub-tab active" data-target="danang">Đà Nẵng</button>
+        <button class="sub-tab" data-target="khanhhoa">Khánh Hòa</button>
+      </div>
+      <div class="result-box active" id="danang">
+        <h3>Kết quả Đà Nẵng</h3>
+        <div class="result-row"><span>Giải ĐB:</span> <span>234567</span></div>
+        <div class="result-row"><span>Giải Nhất:</span> <span>12345</span></div>
+      </div>
+      <div class="result-box" id="khanhhoa">
+        <h3>Kết quả Khánh Hòa</h3>
+        <div class="result-row"><span>Giải ĐB:</span> <span>765432</span></div>
+        <div class="result-row"><span>Giải Nhất:</span> <span>65432</span></div>
+      </div>
+    </div>
 
-  <footer>© Dữ liệu từ API ManyCai – Giao diện đẹp & hiệu ứng by ChatGPT</footer>
+    <!-- Miền Nam -->
+    <div class="region-content" id="miennam">
+      <div class="sub-tabs">
+        <button class="sub-tab active" data-target="bentre">Bến Tre</button>
+        <button class="sub-tab" data-target="vungtau">Vũng Tàu</button>
+        <button class="sub-tab" data-target="baclieu">Bạc Liêu</button>
+      </div>
+      <div class="result-box active" id="bentre">
+        <h3>Kết quả Bến Tre</h3>
+        <div class="result-row"><span>Giải ĐB:</span> <span>111111</span></div>
+      </div>
+      <div class="result-box" id="vungtau">
+        <h3>Kết quả Vũng Tàu</h3>
+        <div class="result-row"><span>Giải ĐB:</span> <span>222222</span></div>
+      </div>
+      <div class="result-box" id="baclieu">
+        <h3>Kết quả Bạc Liêu</h3>
+        <div class="result-row"><span>Giải ĐB:</span> <span>333333</span></div>
+      </div>
+    </div>
+  </div>
 
-  <script>
-const apiKey = 'K2683edd748f0a2';
-const weekdays = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
-
-// Danh sách đài theo từng khu vực và ngày
-const schedule = {
-  mb: ['mb'], // miền Bắc luôn xổ
-  mt: {
-    0: ['KhanhHoa', 'KonTum'],        // Chủ Nhật
-    1: ['PhuYen', 'ThuaThienHue'],    // Thứ Hai
-    2: ['DacLak', 'QuangNam'],        // Thứ Ba
-    3: ['DaNang', 'KhanhHoa'],        // Thứ Tư
-    4: ['BinhDinh', 'QuangBinh', 'QuangTri'], // Thứ Năm
-    5: ['GiaLai', 'NinhThuan'],       // Thứ Sáu
-    6: ['DaNang', 'QuangNgai']        // Thứ Bảy
-  },
-  mn: {
-    0: ['KienGiang', 'TienGiang', 'DaLat'],
-    1: ['DongThap', 'TPHCM', 'CaMau'],
-    2: ['BenTre', 'VungTau', 'BacLieu'],
-    3: ['CanTho', 'SocTrang', 'DongNai'],
-    4: ['AnGiang', 'BinhThuan', 'TayNinh'],
-    5: ['VinhLong', 'BinhDuong', 'TraVinh'],
-    6: ['LongAn', 'HauGiang', 'TPHCM']
-  }
-};
-
-function formatVietnamDate(dateStr) {
-  const d = new Date(dateStr);
-  const weekday = weekdays[d.getDay()];
-  const day = String(d.getDate()).padStart(2, '0');
-  const month = String(d.getMonth() + 1).padStart(2, '0');
-  const year = d.getFullYear();
-  return `${weekday}, ${day}/${month}/${year}`;
-}
-
-function fetchRegion(code, dateStr, province = '') {
-  const fullCode = code === 'mb' ? 'xsmb-1' : `xs${code}-1/${province}`;
-  fetch(`http://free.manycai.com/${apiKey}/${fullCode}.json?date=${dateStr}`)
-    .then(res => res.json())
-    .then(data => {
-      const prizes = data.data.prizes;
-      document.getElementById(`date-${code}`).textContent = formatVietnamDate(dateStr);
-      ['db','nhat','nhi','ba','tu','nam','sau','bay'].forEach((key) => {
-        const cell = document.getElementById(`${code}-${key}`);
-        const nums = (prizes[key] || ['—']).join(' - ');
-        const span = document.createElement('span');
-        span.className = 'rolling';
-        span.innerHTML = `<span>${nums}</span>`;
-        cell.innerHTML = '';
-        cell.appendChild(span);
-      });
-    })
-    .catch(() => {
-      document.getElementById(`date-${code}`).textContent = 'Không có dữ liệu.';
-    });
-}
-
-// Cập nhật giao diện theo ngày
-function updateByDate(dateStr) {
-  const d = new Date(dateStr);
-  const dow = d.getDay();
-
-  // Miền Bắc xổ hàng ngày
-  fetchRegion('mb', dateStr);
-
-  // Miền Trung
-  const mtProvinces = schedule.mt[dow] || [];
-  if (mtProvinces.length) {
-    document.getElementById('date-mt').textContent = `${formatVietnamDate(dateStr)} (${mtProvinces.join(', ')})`;
-    fetchRegion('mt', dateStr, mtProvinces[0]); // bạn có thể gọi thêm nếu muốn nhiều tỉnh
-  } else {
-    document.getElementById('date-mt').textContent = 'Không có xổ số miền Trung ngày này';
-  }
-
-  // Miền Nam
-  const mnProvinces = schedule.mn[dow] || [];
-  if (mnProvinces.length) {
-    document.getElementById('date-mn').textContent = `${formatVietnamDate(dateStr)} (${mnProvinces.join(', ')})`;
-    fetchRegion('mn', dateStr, mnProvinces[0]); // gọi thêm nếu muốn
-  } else {
-    document.getElementById('date-mn').textContent = 'Không có xổ số miền Nam ngày này';
-  }
-}
-
-// Gán giá trị mặc định là hôm nay
-const today = new Date().toISOString().split('T')[0];
-document.getElementById("datePicker").value = today;
-document.getElementById("datePicker").setAttribute("max", today);
-updateByDate(today);
-
-// Khi người dùng chọn lại ngày
-document.getElementById("datePicker").addEventListener("change", function () {
-  const selectedDate = this.value;
-  updateByDate(selectedDate);
-});
-
-    // Hàm format ngày: 2025-06-03 -> Thứ Hai, 03/06/2025
-function formatVietnamDate(dateStr) {
-  const weekdays = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
-  const d = new Date(dateStr);
-  const weekday = weekdays[d.getDay()];
-  const day = String(d.getDate()).padStart(2, '0');
-  const month = String(d.getMonth() + 1).padStart(2, '0');
-  const year = d.getFullYear();
-  return `${weekday}, ${day}/${month}/${year}`;
-}
-
-// Cập nhật dữ liệu theo ngày người dùng chọn
-function fetchAllRegions(dateStr) {
-  regions.forEach(code => {
-    fetch(`http://free.manycai.com/${apiKey}/xs${code}-1.json?date=${dateStr}`)
-      .then(res => res.json())
-      .then(data => {
-        const prizes = data.data.prizes;
-        document.getElementById(`date-${code}`).textContent = formatVietnamDate(dateStr);
-        ['db','nhat','nhi','ba','tu','nam','sau','bay'].forEach((key) => {
-          const cell = document.getElementById(`${code}-${key}`);
-          const nums = (prizes[key] || ['—']).join(' - ');
-          const span = document.createElement('span');
-          span.className = 'rolling';
-          span.innerHTML = `<span>${nums}</span>`;
-          cell.innerHTML = '';
-          cell.appendChild(span);
-        });
-      })
-      .catch(() => {
-        document.getElementById(`date-${code}`).textContent = 'Không có dữ liệu ngày này.';
-      });
-  });
-}
-
-// Gán ngày hôm nay mặc định và giới hạn chọn tương lai
-const today = new Date().toISOString().split('T')[0];
-document.getElementById("datePicker").value = today;
-document.getElementById("datePicker").setAttribute("max", today);
-
-// Gọi lần đầu
-fetchAllRegions(today);
-
-// Gọi lại khi người dùng chọn ngày
-document.getElementById("datePicker").addEventListener("change", function () {
-  const selectedDate = this.value;
-  fetchAllRegions(selectedDate);
-});
-
-    regions.forEach(renderRegion);
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
