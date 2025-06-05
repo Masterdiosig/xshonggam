@@ -1,3 +1,23 @@
+
+.lottery-table th,
+.lottery-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.lottery-table th {
+  background-color: #f33;
+  color: white;
+}
+
+.day-header {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background: #ffe08a;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
 .xoso-tabs {
   font-family: Arial, sans-serif;
   max-width: 100%;
@@ -37,24 +57,4 @@
   margin-bottom: 20px;
   text-align: center;
   font-family: Arial, sans-serif;
-}
-
-.lottery-table th,
-.lottery-table td {
-  border: 1px solid #ccc;
-  padding: 8px;
-}
-
-.lottery-table th {
-  background-color: #f33;
-  color: white;
-}
-
-.day-header {
-  font-size: 18px;
-  font-weight: bold;
-  padding: 10px;
-  background: #ffe08a;
-  border: 1px solid #ccc;
-  margin-top: 20px;
 }
