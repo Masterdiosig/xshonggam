@@ -1,36 +1,3 @@
-.xoso-tabs {
-  font-family: Arial, sans-serif;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.mien-tab, .thu-tabs {
-  display: flex;
-  justify-content: center;
-  background: #d60000;
-}
-
-.mien-btn, .thu-tabs button {
-  background: transparent;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  font-weight: bold;
-  cursor: pointer;
-  border-bottom: 3px solid transparent;
-}
-
-.mien-btn.active, .thu-tabs button.active {
-  border-bottom: 3px solid yellow;
-  background: #b00000;
-}
-
-.kqxs {
-  margin: 15px;
-  background: #fff;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
 .lottery-table {
   width: 100%;
   border-collapse: collapse;
