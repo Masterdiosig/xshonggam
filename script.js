@@ -1,31 +1,32 @@
-// Chuyển tab miền
-document.querySelectorAll('.tab').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-    btn.classList.add('active');
+// Xử lý tab chọn miền
+const regionTabs = document.querySelectorAll(".tab");
+const regionContents = document.querySelectorAll(".region-content");
 
-    const region = btn.getAttribute('data-region');
-    document.querySelectorAll('.region-content').forEach(content => {
-      content.classList.remove('active');
-    });
-    document.getElementById(region).classList.add('active');
+regionTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    regionTabs.forEach(t => t.classList.remove("active"));
+    regionContents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    document.getElementById(tab.dataset.region).classList.add("active");
   });
 });
 
-// Chuyển tab đài
-document.querySelectorAll('.sub-tabs').forEach(group => {
-  const buttons = group.querySelectorAll('.sub-tab');
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const regionContent = btn.closest('.region-content');
-      regionContent.querySelectorAll('.sub-tab').forEach(t => t.classList.remove('active'));
-      btn.classList.add('active');
+// Xử lý tab chọn thứ trong mỗi miền
+const dayTabs = document.querySelectorAll(".day-tab");
+const dayContents = document.querySelectorAll(".day-content");
 
-      regionContent.querySelectorAll('.result-box').forEach(box => {
-        box.classList.remove('active');
-      });
-      const targetId = btn.getAttribute('data-target');
-      regionContent.querySelector(`#${targetId}`).classList.add('active');
-    });
+dayTabs.forEach(tab => {
+  tab.addEventListener("click", () => {
+    const parent = tab.closest(".region-content");
+
+    const days = parent.querySelectorAll(".day-tab");
+    const contents = parent.querySelectorAll(".day-content");
+
+    days.forEach(t => t.classList.remove("active"));
+    contents.forEach(c => c.classList.remove("active"));
+
+    tab.classList.add("active");
+    parent.querySelector(`#${tab.dataset.day}`).classList.add("active");
   });
 });

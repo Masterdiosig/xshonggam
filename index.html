@@ -1,144 +1,121 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Xổ Số 3 Miền</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="container">
-    <h1 class="title">KẾT QUẢ XỔ SỐ 3 MIỀN</h1>
-
-    <!-- Tabs chọn miền -->
-    <div class="region-tabs">
-      <button class="tab active" data-region="mienbac">Miền Bắc</button>
-      <button class="tab" data-region="mientrung">Miền Trung</button>
-      <button class="tab" data-region="miennam">Miền Nam</button>
-    </div>
-
-    <!-- Miền Bắc -->
-    <div class="region-content active" id="mienbac">
-      <div class="sub-tabs">
-        <button class="sub-tab active" data-target="hanoi">Hà Nội</button>
-        <button class="sub-tab" data-target="haiphong">Hải Phòng</button>
-        <button class="sub-tab" data-target="">Vĩnh Phúc</button>
-        <button class="sub-tab" data-target="">Bắc Ninh</button>
-        <button class="sub-tab" data-target="">Quảng Ninh</button>
-        <button class="sub-tab" data-target="">Hải Dương</button>
-        <button class="sub-tab" data-target="">Hải Phòng</button>
-        <button class="sub-tab" data-target="">Hưng Yên</button>
-        <button class="sub-tab" data-target="">Thái Bình</button>
-        <button class="sub-tab" data-target="">Hà Nam</button>
-        <button class="sub-tab" data-target="">Nam Định</button>
-        <button class="sub-tab" data-target="">Ninh Bình</button>
-        <button class="sub-tab" data-target="">Hà Giang</button>
-        <button class="sub-tab" data-target="">Cao Bằng</button>
-        <button class="sub-tab" data-target="">Bắc Kạn</button>
-        <button class="sub-tab" data-target="">Tuyên Quang</button>
-        <button class="sub-tab" data-target="">Lào Cai</button>
-        <button class="sub-tab" data-target="">Yên Bái</button>
-        <button class="sub-tab" data-target="">Thái Nguyên</button>
-        <button class="sub-tab" data-target="">Lạng Sơn</button>
-        <button class="sub-tab" data-target="">Bắc Giang</button>
-        <button class="sub-tab" data-target="">Phú Thọ</button>
-        <button class="sub-tab" data-target="">Điện Biên</button>
-        <button class="sub-tab" data-target="">Lai Châu</button>
-        <button class="sub-tab" data-target="">Sơn La</button>
-        <button class="sub-tab" data-target="">Hoà Bình</button>
-
-      </div>
-      <div class="result-box active" id="hanoi">
-        <h3>Kết quả Hà Nội</h3>
-        <div class="result-row"><span>Giải ĐB:</span> <span>123456</span></div>
-        <div class="result-row"><span>Giải Nhất:</span> <span>34567</span></div>
-        <div class="result-row"><span>Giải Nhì:</span> <span>45678 - 56789</span></div>
-      </div>
-      <div class="result-box" id="haiphong">
-        <h3>Kết quả Hải Phòng</h3>
-        <div class="result-row"><span>Giải ĐB:</span> <span>654321</span></div>
-        <div class="result-row"><span>Giải Nhất:</span> <span>54321</span></div>
-        <div class="result-row"><span>Giải Nhì:</span> <span>43210 - 32109</span></div>
-      </div>
-    </div>
-
-    <!-- Miền Trung -->
-    <div class="region-content" id="mientrung">
-      <div class="sub-tabs">
-        <button class="sub-tab active" data-target="danang">Đà Nẵng</button>
-        <button class="sub-tab" data-target="khanhhoa">Khánh Hòa</button>
-        <button class="sub-tab" data-target="">Kon Tum</button>
-        <button class="sub-tab" data-target="">Gia Lai</button>
-        <button class="sub-tab" data-target="">Đắk Lắk</button>
-        <button class="sub-tab" data-target="">Đắk Nông</button>
-        <button class="sub-tab" data-target="">Thanh Hoá</button>
-        <button class="sub-tab" data-target="">Nghệ An</button>
-        <button class="sub-tab" data-target="">Hà Tĩnh</button>
-        <button class="sub-tab" data-target="">Quảng Bình</button>
-        <button class="sub-tab" data-target="">Quảng Trị</button>
-        <button class="sub-tab" data-target="">Thừa Thiên Huế</button>
-        <button class="sub-tab" data-target="">Đà Nẵng</button>
-        <button class="sub-tab" data-target="">Quảng Nam</button>
-        <button class="sub-tab" data-target="">Quảng Ngãi</button>
-        <button class="sub-tab" data-target="">Phú Yên</button>
-        <button class="sub-tab" data-target="">Bình Định</button>
-        <button class="sub-tab" data-target="">Ninh Thuận</button>
-        <button class="sub-tab" data-target="">Khánh Hoà</button>
-      </div>
-      <div class="result-box active" id="danang">
-        <h3>Kết quả Đà Nẵng</h3>
-        <div class="result-row"><span>Giải ĐB:</span> <span>234567</span></div>
-        <div class="result-row"><span>Giải Nhất:</span> <span>12345</span></div>
-      </div>
-      <div class="result-box" id="khanhhoa">
-        <h3>Kết quả Khánh Hòa</h3>
-        <div class="result-row"><span>Giải ĐB:</span> <span>765432</span></div>
-        <div class="result-row"><span>Giải Nhất:</span> <span>65432</span></div>
-      </div>
-    </div>
-
-    <!-- Miền Nam -->
-    <div class="region-content" id="miennam">
-      <div class="sub-tabs">
-        <button class="sub-tab active" data-target="bentre">Bến Tre</button>
-        <button class="sub-tab" data-target="vungtau">Vũng Tàu</button>
-        <button class="sub-tab" data-target="baclieu">Bạc Liêu</button>
-        <button class="sub-tab" data-target="camau">Cà Mau</button>
-        <button class="sub-tab" data-target="soctrang">Sóc Trăng</button>
-        <button class="sub-tab" data-target="haugiang">Hậu Giang</button>
-        <button class="sub-tab" data-target="cantho">Cần Thơ</button>
-        <button class="sub-tab" data-target="kiengiang">Kiên Giang</button>
-        <button class="sub-tab" data-target="angiang">An Giang</button>
-        <button class="sub-tab" data-target="dongthap">Đồng Tháp</button>
-        <button class="sub-tab" data-target="vinhlong">Vĩnh Long</button>
-        <button class="sub-tab" data-target="travinh">Trà Vinh</button>
-        <button class="sub-tab" data-target="bentre">Bến Tre</button>
-        <button class="sub-tab" data-target="longan">Long An</button>
-        <button class="sub-tab" data-target="hochiminh">TP.Hồ Chí Minh</button>
-        <button class="sub-tab" data-target="vungtau">Bà Rịa - Vũng Tàu</button>
-        <button class="sub-tab" data-target="dongnai">Đồng Nai</button>
-        <button class="sub-tab" data-target="binhduong">Bình Dương</button>
-        <button class="sub-tab" data-target="tayninh">Tây Ninh</button>
-        <button class="sub-tab" data-target="binhphuoc">Bình Phước</button>
-        <button class="sub-tab" data-target="binhthuan">Bình Thuận</button>
-        <button class="sub-tab" data-target="lamdong">Lâm Đồng</button>
-
-      </div>
-      <div class="result-box active" id="bentre">
-        <h3>Kết quả Bến Tre</h3>
-        <div class="result-row"><span>Giải ĐB:</span> <span>111111</span></div>
-      </div>
-      <div class="result-box" id="vungtau">
-        <h3>Kết quả Vũng Tàu</h3>
-        <div class="result-row"><span>Giải ĐB:</span> <span>222222</span></div>
-      </div>
-      <div class="result-box" id="baclieu">
-        <h3>Kết quả Bạc Liêu</h3>
-        <div class="result-row"><span>Giải ĐB:</span> <span>333333</span></div>
-      </div>
-    </div>
+<div class="xoso-tabs">
+  <div class="mien-tab">
+    <button class="mien-btn active" onclick="chonMien('mn')">Miền Nam</button>
+    <button class="mien-btn" onclick="chonMien('mt')">Miền Trung</button>
+    <button class="mien-btn" onclick="chonMien('mb')">Miền Bắc</button>
   </div>
 
-  <script src="script.js"></script>
-</body>
-</html>
+  <div class="thu-tabs" id="thu-tabs-mn">
+    <button onclick="chonThu('T2', 'mn')">T2</button>
+    <button onclick="chonThu('T3', 'mn')">T3</button>
+    <button onclick="chonThu('T4', 'mn')">T4</button>
+    <button onclick="chonThu('T5', 'mn')">T5</button>
+    <button onclick="chonThu('T6', 'mn')">T6</button>
+    <button onclick="chonThu('T7', 'mn')">T7</button>
+    <button onclick="chonThu('CN', 'mn')">CN</button>
+  </div>
+
+  <div class="thu-tabs" id="thu-tabs-mt" style="display:none;">
+    <button onclick="chonThu('T2', 'mt')">T2</button>
+    <button onclick="chonThu('T3', 'mt')">T3</button>
+    <button onclick="chonThu('T4', 'mt')">T4</button>
+    <button onclick="chonThu('T5', 'mt')">T5</button>
+    <button onclick="chonThu('T6', 'mt')">T6</button>
+    <button onclick="chonThu('T7', 'mt')">T7</button>
+    <button onclick="chonThu('CN', 'mt')">CN</button>
+  </div>
+
+  <div class="thu-tabs" id="thu-tabs-mb" style="display:none;">
+    <button onclick="chonThu('T2', 'mb')">T2</button>
+    <button onclick="chonThu('T3', 'mb')">T3</button>
+    <button onclick="chonThu('T4', 'mb')">T4</button>
+    <button onclick="chonThu('T5', 'mb')">T5</button>
+    <button onclick="chonThu('T6', 'mb')">T6</button>
+    <button onclick="chonThu('T7', 'mb')">T7</button>
+    <button onclick="chonThu('CN', 'mb')">CN</button>
+  </div>
+
+  <!-- Bảng kết quả ở đây, bạn thêm theo từng miền / thứ -->
+  <div class="kqxs" id="kqxs-T3-mn">
+    <h3>Thứ 3 - Bến Tre | Vũng Tàu | Bạc Liêu</h3>
+   <div class="result-day">
+  <div class="day-header">
+    <strong>Thứ 3:</strong> Bến Tre | Vũng Tàu | Bạc Liêu
+  </div>
+  <table class="lottery-table">
+    <tr>
+      <th>Giải</th>
+      <th>Bến Tre</th>
+      <th>Vũng Tàu</th>
+      <th>Bạc Liêu</th>
+    </tr>
+    <tr>
+      <td>Giải 8</td>
+      <td>68</td>
+      <td>38</td>
+      <td>04</td>
+    </tr>
+    <tr>
+      <td>Giải 7</td>
+      <td>016</td>
+      <td>911</td>
+      <td>765</td>
+    </tr>
+    <tr>
+      <td>Giải 6</td>
+      <td>1834<br>4501<br>0369</td>
+      <td>3369<br>9651<br>1491</td>
+      <td>2785<br>1580<br>2066</td>
+    </tr>
+    <tr>
+      <td>Giải 5</td>
+      <td>0492</td>
+      <td>6540</td>
+      <td>0812</td>
+    </tr>
+    <tr>
+      <td>Giải 4</td>
+      <td>74507</td>
+      <td>25659</td>
+      <td>93097</td>
+    </tr>
+    <!-- Tiếp tục Giải 3, Giải nhì, Giải nhất, Đặc biệt -->
+  </table>
+</div>
+
+  </div>
+
+  <div class="kqxs" id="kqxs-T2-mn" style="display:none;">
+    <h3>Thứ 2 - TP.HCM | Đồng Tháp | Cà Mau</h3>
+    <!-- Bảng kết quả -->
+  </div>
+
+  <!-- Thêm các phần khác như MT, MB tương tự -->
+</div>
+
+
+<script>
+function chonMien(mien) {
+  document.querySelectorAll('.mien-btn').forEach(btn => btn.classList.remove('active'));
+  document.querySelectorAll('.thu-tabs').forEach(tab => tab.style.display = 'none');
+
+  document.querySelectorAll('.mien-btn').forEach(btn => {
+    if (btn.textContent.includes(mien.toUpperCase())) btn.classList.add('active');
+  });
+
+  document.getElementById(`thu-tabs-${mien}`).style.display = 'flex';
+
+  // Ẩn toàn bộ kết quả
+  document.querySelectorAll('.kqxs').forEach(el => el.style.display = 'none');
+}
+
+function chonThu(thu, mien) {
+  document.querySelectorAll('.thu-tabs').forEach(tab => {
+    tab.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
+  });
+  document.getElementById(`thu-tabs-${mien}`).querySelector(`button[onclick*="${thu}"]`).classList.add('active');
+
+  document.querySelectorAll('.kqxs').forEach(el => el.style.display = 'none');
+  document.getElementById(`kqxs-${thu}-${mien}`).style.display = 'block';
+}
+</script>

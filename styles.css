@@ -1,68 +1,60 @@
-body {
+.xoso-tabs {
   font-family: Arial, sans-serif;
-  background: #f8f9fa;
-  margin: 0;
-  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.container {
-  max-width: 800px;
-  margin: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.title {
-  text-align: center;
-  font-size: 24px;
-  color: #d62828;
-  margin-bottom: 20px;
-}
-
-.region-tabs, .sub-tabs {
+.mien-tab, .thu-tabs {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
-  margin-bottom: 10px;
+  background: #d60000;
 }
 
-.tab, .sub-tab {
-  background: #e0e0e0;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.tab.active, .sub-tab.active {
-  background: #d62828;
+.mien-btn, .thu-tabs button {
+  background: transparent;
   color: white;
+  border: none;
+  padding: 10px 15px;
   font-weight: bold;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
 }
 
-.region-content {
-  display: none;
+.mien-btn.active, .thu-tabs button.active {
+  border-bottom: 3px solid yellow;
+  background: #b00000;
 }
 
-.region-content.active {
-  display: block;
+.kqxs {
+  margin: 15px;
+  background: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.lottery-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
 }
 
-.result-box {
-  display: none;
-  margin-top: 10px;
+.lottery-table th,
+.lottery-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
 }
 
-.result-box.active {
-  display: block;
+.lottery-table th {
+  background-color: #f33;
+  color: white;
 }
 
-.result-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 0;
-  border-bottom: 1px solid #ccc;
+.day-header {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  background: #ffe08a;
+  border: 1px solid #ccc;
+  margin-top: 20px;
 }
