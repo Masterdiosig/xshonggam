@@ -13,9 +13,11 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Xổ số 3 miền",
-  description: "Tra cứu kết quả xổ số trực tiếp",
+  title: "Xổ Số 3 Miền",
+  description: "Xem kết quả xổ số 3 miền trực tiếp",
+  viewport: "width=device-width, initial-scale=1.0", // 👈 Thêm dòng này
 };
+
 
 export default function RootLayout({
   children,
