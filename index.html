@@ -47,7 +47,7 @@
       <tr><td>Giải 7</td><td>016</td><td>911</td><td>765</td></tr>
       <tr><td>Giải 6</td><td>1834<br>4501<br>0369</td><td>3369<br>9651<br>1491</td><td>2785<br>1580<br>2066</td></tr>
       <tr><td>Giải 5</td><td>0492</td><td>6540</td><td>0812</td></tr>
-      <tr><td>Giải 4</td><td>74507</td><td>25659</td><td>930988</td></tr>
+      <tr><td>Giải 4</td><td>74507</td><td>25659</td><td>93098</td></tr>
     </table>
   </div>
 </div> <!-- 👈 Thêm thẻ đóng chính xác -->
@@ -61,3 +61,29 @@
 
   <!-- Thêm các phần khác như MT, MB tương tự -->
 </div>
+
+<script>
+function chonMien(mien) {
+  document.querySelectorAll('.mien-btn').forEach(btn => btn.classList.remove('active'));
+  document.querySelectorAll('.thu-tabs').forEach(tab => tab.style.display = 'none');
+
+  document.querySelectorAll('.mien-btn').forEach(btn => {
+    if (btn.textContent.includes(mien.toUpperCase())) btn.classList.add('active');
+  });
+
+  document.getElementById(`thu-tabs-${mien}`).style.display = 'flex';
+
+  // Ẩn toàn bộ kết quả
+  document.querySelectorAll('.kqxs').forEach(el => el.style.display = 'none');
+}
+
+function chonThu(thu, mien) {
+  document.querySelectorAll('.thu-tabs').forEach(tab => {
+    tab.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
+  });
+  document.getElementById(`thu-tabs-${mien}`).querySelector(`button[onclick*="${thu}"]`).classList.add('active');
+
+  document.querySelectorAll('.kqxs').forEach(el => el.style.display = 'none');
+  document.getElementById(`kqxs-${thu}-${mien}`).style.display = 'block';
+}
+</script>
