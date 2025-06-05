@@ -1,7 +1,6 @@
-import "../../../styles.css"; // đúng nếu file ở gốc
-import "./globals.css"; // nếu bạn dùng file này
-import { Inter, Roboto_Mono } from "next/font/google";
 import type { Metadata } from "next";
+import { Inter, Roboto_Mono } from "next/font/google";
+import "./globals.css"; // Nhập CSS toàn cục
 
 const inter = Inter({
   variable: "--font-inter",
@@ -25,6 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi">
+      <head>
+        {/* Bạn có thể thêm link đến font hoặc CSS khác ở đây */}
+      </head>
       <body className={`${inter.variable} ${robotoMono.variable} antialiased`}>
         {children}
       </body>
