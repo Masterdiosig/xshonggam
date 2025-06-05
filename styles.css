@@ -1,60 +1,72 @@
-
-.lottery-table th,
-.lottery-table td {
-  border: 1px solid #ccc;
-  padding: 8px;
+/* General Styles for the XoSo (Lottery) Component */
+.xoso-tabs {
+  font-family: Arial, sans-serif; /* Base font for the component */
+  max-width: 100%;
+  margin: 0 auto; /* Center the component */
 }
 
-.lottery-table th {
-  background-color: #f33;
+/* Tab Bar (mien-tab, thu-tabs) */
+.mien-tab,
+.thu-tabs {
+  display: flex;
+  justify-content: center;
+  background: #d60000; /* Dark red background for tab bars */
+}
+
+/* Tab Buttons (mien-btn, thu-tabs button) */
+.mien-btn,
+.thu-tabs button {
+  background: transparent;
   color: white;
+  border: none; /* Remove default button border */
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 3px solid transparent; /* Base style for bottom border, transparent by default */
 }
 
+/* Active Tab Button State */
+.mien-btn.active,
+.thu-tabs button.active {
+  border-bottom-color: yellow; /* Highlight active tab with a yellow underline */
+  background: #b00000;      /* Slightly darker red for active tab background */
+}
+
+/* Lottery Results Container (KQXS) */
+.kqxs {
+  margin: 15px;
+  background: #ffffff; /* White background for results area */
+  padding: 10px;
+  border: 1px solid #ccc; /* Standard border */
+}
+
+/* Day Header (e.g., for date or specific draw) */
 .day-header {
   font-size: 18px;
   font-weight: bold;
   padding: 10px;
-  background: #ffe08a;
+  background: #ffe08a; /* Light yellow background */
   border: 1px solid #ccc;
-  margin-top: 20px;
-}
-.xoso-tabs {
-  font-family: Arial, sans-serif;
-  max-width: 100%;
-  margin: 0 auto;
+  margin-top: 20px; /* Space above the day header */
 }
 
-.mien-tab, .thu-tabs {
-  display: flex;
-  justify-content: center;
-  background: #d60000;
-}
-
-.mien-btn, .thu-tabs button {
-  background: transparent;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  font-weight: bold;
-  cursor: pointer;
-  border-bottom: 3px solid transparent;
-}
-
-.mien-btn.active, .thu-tabs button.active {
-  border-bottom: 3px solid yellow;
-  background: #b00000;
-}
-
-.kqxs {
-  margin: 15px;
-  background: #fff;
-  padding: 10px;
-  border: 1px solid #ccc;
-}
+/* Lottery Table Styling */
 .lottery-table {
   width: 100%;
-  border-collapse: collapse;
-  margin-bottom: 20px;
-  text-align: center;
-  font-family: Arial, sans-serif;
+  border-collapse: collapse; /* Merge cell borders */
+  margin-bottom: 20px;    /* Space below the table */
+  text-align: center;      /* Center text in table cells */
+  font-family: Arial, sans-serif; /* Explicitly set font for robustness */
 }
+
+.lottery-table th,
+.lottery-table td {
+  border: 1px solid #ccc; /* Standard border for table cells */
+  padding: 8px;           /* Padding within cells */
+}
+
+.lottery-table th {
+  background-color: #f33; /* Red background for table headers (original shorthand preserved) */
+  color: white;               /* White text for table headers */
+}
+
