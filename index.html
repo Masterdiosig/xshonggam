@@ -37,8 +37,7 @@
 
   <!-- Bảng kết quả ở đây, bạn thêm theo từng miền / thứ -->
   <div class="kqxs" id="kqxs-T3-mn">
-    <h3>Thứ 3 - Bến Tre | Vũng Tàu | Bạc Liêu</h3>
-   <div class="result-day">
+    <div class="result-day">
   <div class="day-header">
     <strong>Thứ 3:</strong> Bến Tre | Vũng Tàu | Bạc Liêu
   </div>
@@ -83,7 +82,6 @@
   </table>
 </div>
 
-  </div>
 
   <div class="kqxs" id="kqxs-T2-mn" style="display:none;">
     <h3>Thứ 2 - TP.HCM | Đồng Tháp | Cà Mau</h3>
@@ -92,30 +90,3 @@
 
   <!-- Thêm các phần khác như MT, MB tương tự -->
 </div>
-
-
-<script>
-function chonMien(mien) {
-  document.querySelectorAll('.mien-btn').forEach(btn => btn.classList.remove('active'));
-  document.querySelectorAll('.thu-tabs').forEach(tab => tab.style.display = 'none');
-
-  document.querySelectorAll('.mien-btn').forEach(btn => {
-    if (btn.textContent.includes(mien.toUpperCase())) btn.classList.add('active');
-  });
-
-  document.getElementById(`thu-tabs-${mien}`).style.display = 'flex';
-
-  // Ẩn toàn bộ kết quả
-  document.querySelectorAll('.kqxs').forEach(el => el.style.display = 'none');
-}
-
-function chonThu(thu, mien) {
-  document.querySelectorAll('.thu-tabs').forEach(tab => {
-    tab.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
-  });
-  document.getElementById(`thu-tabs-${mien}`).querySelector(`button[onclick*="${thu}"]`).classList.add('active');
-
-  document.querySelectorAll('.kqxs').forEach(el => el.style.display = 'none');
-  document.getElementById(`kqxs-${thu}-${mien}`).style.display = 'block';
-}
-</script>
