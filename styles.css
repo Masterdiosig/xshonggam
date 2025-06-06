@@ -34,11 +34,12 @@
 
 /* Lottery Results Container (KQXS) */
 .kqxs {
-  margin: 15px;
-  background: #ffffff; /* White background for results area */
-  padding: 10px;
-  border: 1px solid #ccc; /* Standard border */
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: transparent;
 }
+
 
 /* Day Header (e.g., for date or specific draw) */
 .day-header {
