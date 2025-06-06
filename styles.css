@@ -10,7 +10,7 @@
 .thu-tabs {
   display: flex;
   justify-content: center;
-  background: #d60000; /* Dark red background for tab bars */
+  background: #ff0000; /* Dark red background for tab bars */
 }
 
 /* Tab Buttons (mien-btn, thu-tabs button) */
@@ -29,7 +29,7 @@
 .mien-btn.active,
 .thu-tabs button.active {
   border-bottom-color: yellow; /* Highlight active tab with a yellow underline */
-  background: #b00000;      /* Slightly darker red for active tab background */
+  background: #ff0000;      /* Slightly darker red for active tab background */
 }
 
 /* Lottery Results Container (KQXS) */
