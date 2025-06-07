@@ -74,7 +74,7 @@
 
 
 .lottery-table th {
-  background-color: rgb(0, 255, 47); /* Red background for table headers (original shorthand preserved) */
-  color: white;               /* White text for table headers */
+  background-color: rgb(69, 2, 66); /* Red background for table headers (original shorthand preserved) */
+  color: rgb(255, 238, 0);               /* White text for table headers */
 }
 
