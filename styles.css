@@ -81,3 +81,7 @@
   overflow-x: auto;
   width: 100%;
 }
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
