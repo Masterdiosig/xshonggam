@@ -85,3 +85,32 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+
+/* mẫumẫu (DB) */
+
+@media (max-width: 768px) {
+  .mien-tab,
+  .thu-tabs {
+    flex-wrap: wrap;
+  }
+
+  .mien-btn,
+  .thu-tabs button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .lottery-table td:not(:first-child) {
+    font-size: 18px;
+  }
+
+  .lottery-table th,
+  .lottery-table td {
+    padding: 6px;
+  }
+
+  .day-header {
+    font-size: 16px;
+    text-align: center;
+  }
+}
