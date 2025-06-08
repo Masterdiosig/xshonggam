@@ -118,3 +118,9 @@
   color: red;
   font-weight: bold;
 }
+
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
