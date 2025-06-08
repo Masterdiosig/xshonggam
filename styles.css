@@ -98,20 +98,9 @@
     font-size: 14px;
     padding: 8px 10px;
   }
-@media (max-width: 768px) {
-  .mien-tab,
-  .thu-tabs {
-    flex-wrap: wrap;
-  }
-
-  .mien-btn,
-  .thu-tabs button {
-    font-size: 14px;
-    padding: 8px 10px;
-  }
 
   .lottery-table td:not(:first-child) {
-    font-size: 32px; /* Tùy chỉnh vừa điện thoại */
+    font-size: 28px;
   }
 
   .lottery-table th,
