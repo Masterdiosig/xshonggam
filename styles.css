@@ -67,7 +67,7 @@
 
 .lottery-table td:not(:first-child) {
   font-weight: bold;
-  font-size: 64px; /* chỉnh vừa phải, không cần 333px */
+  font-size: 3333px; /* chỉnh vừa phải, không cần 333px */
   color: #000;
 }
 
