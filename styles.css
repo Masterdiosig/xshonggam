@@ -65,10 +65,9 @@
   padding: 8px;           /* Padding within cells */
 }
 
-/* Áp dụng cho các cột chứa số, giữ nguyên border & padding */
 .lottery-table td:not(:first-child) {
   font-weight: bold;
-  font-size: 333px;
+  font-size: 64px; /* chỉnh vừa phải, không cần 333px */
   color: #000;
 }
 
@@ -100,11 +99,20 @@
     padding: 8px 10px;
   }
 @media (max-width: 768px) {
-  .lottery-table td:not(:first-child) {
-    font-size: 28px;
+  .mien-tab,
+  .thu-tabs {
+    flex-wrap: wrap;
   }
-}
 
+  .mien-btn,
+  .thu-tabs button {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .lottery-table td:not(:first-child) {
+    font-size: 32px; /* Tùy chỉnh vừa điện thoại */
+  }
 
   .lottery-table th,
   .lottery-table td {
@@ -116,6 +124,7 @@
     text-align: center;
   }
 }
+
 .lottery-table tr:nth-child(2) td:not(:first-child) {
   color: red;
   font-weight: bold;
