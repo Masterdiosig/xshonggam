@@ -167,9 +167,10 @@ html, body {
 
 
 
-.lottery-table td {
-  white-space: nowrap;        /* ✅ Thêm dòng này */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  vertical-align: middle;
+.lottery-table td:not(:first-child) {
+  font-weight: 900;                    /* Đậm tối đa */
+  font-size: 24px;
+  color: #000;
+  font-family: Impact, Arial Black, sans-serif; /* Rõ nét, rộng */
+  letter-spacing: 1px;                /* Giãn nhẹ giữa các chữ số */
 }
