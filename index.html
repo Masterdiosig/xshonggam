@@ -80,26 +80,20 @@
       border: 1px solid #ccc;
       padding: 8px;
     }
-/* Số kết quả – desktop */
+ /* Số kết quả – mặc định (desktop) */
 .lottery-table td:not(:first-child) {
   font-weight: bold;
-  font-size: 24px; /* ⬅ tăng lên từ 20px */
+  font-size: 24px;
   color: #000;
 }
 
-/* Số kết quả – desktop */
-.lottery-table td:not(:first-child) {
-  font-weight: bold;
-  font-size: 30px; /* ⬅ tăng lên từ 20px */
-  color: #000;
-}
-
-/* Responsive Mobile */
+/* Responsive cho Mobile */
 @media (max-width: 768px) {
   .lottery-table td:not(:first-child) {
-    font-size: 30px; /* ⬅ tăng từ 30px lên 33px */
+    font-size: 30px; /* sẽ lớn trên điện thoại nếu có thẻ viewport */
   }
 }
+
 
 
     .lottery-table th {
