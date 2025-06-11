@@ -163,3 +163,13 @@ html, body {
   overflow: hidden;          /* Ngăn tràn nội dung */
   vertical-align: middle;    /* Canh giữa theo chiều dọc */
 }
+
+
+
+
+.lottery-table td {
+  white-space: nowrap;        /* ✅ Thêm dòng này */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
