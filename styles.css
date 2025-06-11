@@ -124,10 +124,10 @@ body::-webkit-scrollbar {
 }
 
 
-
+/* chìu rộng ô giải */
 .lottery-table th:first-child,
 .lottery-table td:first-child {
-  width: 17px;             /* 👈 Chiều rộng cột “Giải” */
+  width: 18px;             /* 👈 Chiều rộng cột “Giải” */
   font-size: 13px;         /* 👈 Cỡ chữ nhỏ lại nếu muốn */
   padding: 6px 4px;        /* 👈 Padding nhỏ gọn */
   white-space: nowrap;     /* 👈 Không cho xuống dòng */
@@ -143,7 +143,7 @@ body::-webkit-scrollbar {
 
 
 
-
+/* màu số đầu */
 
 .lottery-table tr:nth-child(2) td:not(:first-child) {
   color: red;
@@ -152,4 +152,15 @@ body::-webkit-scrollbar {
 html, body {
   scrollbar-width: none;        /* Firefox */
   -ms-overflow-style: none;     /* IE 10+ */
+}
+
+
+
+
+/* Ngăn xổ số bị xuống dòng trong các ô */
+.lottery-table td {
+  white-space: nowrap;       /* Không cho xuống dòng */
+  overflow: hidden;          /* Ngăn tràn nội dung */
+  text-overflow: ellipsis;   /* Tùy chọn: nếu quá dài thì hiện ... */
+  vertical-align: middle;    /* Canh giữa theo chiều dọc */
 }
