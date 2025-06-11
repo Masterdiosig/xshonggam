@@ -86,7 +86,7 @@ body::-webkit-scrollbar {
 .lottery-table td:not(:first-child) {
   font-weight: bold;
   font-size: 24px;
-  color: #000;
+  color: #000000;
 }
 
 /* Responsive cho Mobile */
@@ -96,8 +96,8 @@ body::-webkit-scrollbar {
   }
 }
 
-
-
+/* thanh ngang */
+  .lottery-table td:not(:first-child) 
     .lottery-table th {
       background-color: rgb(69, 2, 66);
       color: rgb(255, 238, 0);
