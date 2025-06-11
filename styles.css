@@ -127,7 +127,7 @@ body::-webkit-scrollbar {
 
 .lottery-table th:first-child,
 .lottery-table td:first-child {
-  width: 18px;             /* 👈 Chiều rộng cột “Giải” */
+  width: 15px;             /* 👈 Chiều rộng cột “Giải” */
   font-size: 13px;         /* 👈 Cỡ chữ nhỏ lại nếu muốn */
   padding: 6px 4px;        /* 👈 Padding nhỏ gọn */
   white-space: nowrap;     /* 👈 Không cho xuống dòng */
