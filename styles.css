@@ -159,7 +159,7 @@ html, body {
 
 /* Ngăn xổ số bị xuống dòng trong các ô */
 .lottery-table td {
- 
+  white-space: nowrap;
   overflow: hidden;          /* Ngăn tràn nội dung */
   text-overflow: ellipsis;   /* Tùy chọn: nếu quá dài thì hiện ... */
   vertical-align: middle;    /* Canh giữa theo chiều dọc */
