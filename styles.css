@@ -132,7 +132,7 @@ body::-webkit-scrollbar {
   padding: 6px 4px;        /* 👈 Padding nhỏ gọn */
   white-space: nowrap;     /* 👈 Không cho xuống dòng */
   text-align: center;      /* 👈 Canh giữa */
-  background: #f5f5f5;     /* 👈 (tuỳ chọn) màu nền nhẹ cho đẹp */
+  background: #b6b6b6;     /* 👈 (tuỳ chọn) màu nền nhẹ cho đẹp */
 }
 
 
