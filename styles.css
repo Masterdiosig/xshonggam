@@ -2,3 +2,12 @@
   color: red;
   font-weight: bold;
 }
+html, body {
+  scrollbar-width: none;        /* Firefox */
+  -ms-overflow-style: none;     /* IE 10+ */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;                /* Safari & Chrome */
+}
