@@ -1,0 +1,4 @@
+.lottery-table tr:nth-child(2) td:not(:first-child) {
+  color: red;
+  font-weight: bold;
+}
