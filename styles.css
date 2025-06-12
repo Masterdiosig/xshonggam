@@ -169,8 +169,8 @@ html, body {
 
 .lottery-table td:not(:first-child) {
   font-weight: 900;                    /* Đậm tối đa */
-  font-size: 24px;
+  font-size: 22px;
   color: #000;
-  font-family: Impact, Arial Black, sans-serif; /* Rõ nét, rộng */
+  font-family: Impact, Arial rgb(29, 26, 26), sans-serif; /* Rõ nét, rộng */
   letter-spacing: 1px;                /* Giãn nhẹ giữa các chữ số */
 }
