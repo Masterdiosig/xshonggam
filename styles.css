@@ -170,7 +170,7 @@ html, body {
 .lottery-table td:not(:first-child) {
   font-weight: 900;                    /* Đậm tối đa */
   font-size: 22px;
-  color: #000;
-  font-family: Impact, Arial rgb(29, 26, 26), sans-serif; /* Rõ nét, rộng */
-  letter-spacing: 1px;                /* Giãn nhẹ giữa các chữ số */
+  color: #1a0303;
+  font-family: Impact, Arial rgb(29, 28, 28), sans-serif; /* Rõ nét, rộng */
+  letter-spacing: 0.5px;                /* Giãn nhẹ giữa các chữ số */
 }
